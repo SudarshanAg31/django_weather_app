@@ -37,13 +37,17 @@
   <div class="row">
     {% if city%}
     <div class="col-md-6 col-md-offset-3">
-      <h1>city: {{city}}</h1>
-      <h3>country code : {{data.country_code}}</h1>
+        {% if data.error %}
+        <h1>Error :{{data.error}} </h1>
+        {% else %}
+        <h1>city: {{city}}</h1>
+        <h3>country code : {{data.country_code}}</h1>
         <h5>coordinate :{{data.coordinate}}</h5>
         <h5>temp : {{data.temp}}</h5>
         <h5>pressure : {{data.pressure}} </h5>
         <h5>humidity :{{data.humidity}} </h5>
         <h5>cloud :{{data.clouds}} </h5>
+        {% endif %}
     </div>
     {%endif%}
   </div>
