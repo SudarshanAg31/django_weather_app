@@ -4,6 +4,8 @@ A simple and responsive Weather Application built with **Django** that allows us
 
 ---
 
+## Direct link: https://django-weather-app-blond.vercel.app/
+
 ## 📌 Features
 
 - 🔍 Search weather by city name
